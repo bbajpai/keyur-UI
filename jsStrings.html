@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			JS
+		</title>
+	</head>
+	<body>
+		<script>
+			var data = "             This is Javascript, you can't ignore it. Java is complex";
+
+			var len = data.length;
+
+			console.log('Length is '+ len);
+			console.log(data);
+
+			var pos = data.search('Java');
+			console.log('Position of java text '+ pos);
+
+
+			var newData = data.slice(20);
+			console.log(newData);
+
+			var data2 = data.substring(0, 20);
+				console.log(data2);
+
+			var data3 = data.substr(5, 2);
+			console.log(data3);
+
+			var data4 = data.replace("Javascript","CSS");
+				console.log(data4);
+			var data5 = data.toLowerCase();
+				console.log(data5);
+			var data6 = data.trim();
+				console.log(data6);
+			
+
+		</script>
+	</body>
+</html>

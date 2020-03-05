@@ -1,0 +1,78 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			Bootstrap
+		</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h1> Bootstrap Forms</h1>
+					<form>
+						<div class="form-group">
+							<label for="fname">First Name</label>
+							<input type="text" name="fname" class="form-control"/>
+						</div>
+						
+						<div class="form-group">
+							<label for="lname">Last Name</label>
+							<input type="text" name="lname" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="email">Email Id</label>
+							<input type="email" name="email" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label for="pass">Password</label>
+							<input type="password" name="pass" class="form-control"/>
+						</div>
+						<label>Select Gender</label>
+						<div class="radio">
+							<label>
+								<input type="radio" name="gender" value="male" checked>Male
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="gender" value="Female" >Female
+							</label>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox" name="save" value="" >Save Password
+							</label>
+						</div>
+						<div class="form-group">
+							<label for="lang">Select Language</label>
+							<select class="form-control" id="lang">
+								<option>---Select Language---</option>
+								<option>Hindi</option>
+								<option>English</option>
+								<option>German</option>
+								<option>French</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="comment">Feedback</label>
+							<textarea  rows="5" class="form-control" id="comment"></textarea>
+						</div>
+
+						<button type="submit" class="btn btn-danger btn-block">Submit</button>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
+
+

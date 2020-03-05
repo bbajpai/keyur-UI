@@ -1,0 +1,35 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			JS
+		</title>
+	</head>
+	<body>
+		<div id="box1">
+			Hii !! this is div
+		</div>
+		<div class="box2">
+			First Container
+		</div>
+		<div class="box2">
+			Second Container
+		</div>
+		<h1 id="head1"> Heading</h1>
+
+		<script>
+			var boxJS = document.getElementById('box1');
+			boxJS.innerHTML = "Hello !!! this is Box1";
+
+			var box2JS = document.getElementsByClassName('box2');
+
+			box2JS[1].innerHTML = "Hiii!!! first box";
+
+
+			var heading = document.getElementById('head1');
+			heading.innerHTML = "Hellooooooo...";
+
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			HTML Forms
+		</title>
+	</head>
+	<body>
+		<h2>HTML Forms</h2>
+		<form action="first.html" method="POST">
+			Enter First Name 
+			<input type="text" name="fName"/>
+			<br/><br/>
+
+			Enter Last Name 
+			<input type="text" name="lName"/>
+			<br/><br/>
+
+			Enter Email ID
+			<input type="email"name="email"/>
+
+			<br/><br/>
+
+			Enter Password
+			<input type="password"name="pass"/>
+			<br/><br/>
+
+			Select Gender
+			<input type="radio" name="gender" value="male">Male
+			<input type="radio" name="gender" value="famale">Female
+			<input type="radio" name="gender" value="other">Other
+			<br/><br/>
+
+			Skills Known
+			<input type="checkbox" name="skill" value="html"> HTML
+			<input type="checkbox" name="skill" value="css">CSS
+			<input type="checkbox" name="skill" value="java">Java
+			<input type="checkbox" name="skill" value="C#">C#
+			<input type="checkbox" name="skill" value="Javascript">Javascript
+			<br/><br/>
+
+			Primary Language
+			<select>
+				<option>---Select Language---</option>
+				<option>English</option>
+				<option>Hindi</option>
+				<option>Spanish</option>
+				<option>Others</option>
+			</select>
+			<br/><br/>
+			<textarea rows="10" cols="40"></textarea> 
+			<br/><br/>
+			Select DOB
+			<input type="date" name="date"/>
+			<br/><br/>
+			Select Color
+			<input type="color" name="color"/>
+			<br/><br/>
+			<input type="submit" value="submit">
+		</form>
+	</body>
+</html>

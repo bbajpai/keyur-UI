@@ -1,0 +1,63 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			JS
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<p id="p1"> Hi This is Jquery</p>
+		<p class="p2"> Hi This is Jquery Para2</p>
+		<p id="p3"> Hi This is Jquery Para 3</p>
+
+		<div style="width:300px; height: 300px; background-color: red;">
+		</div>
+
+		<button type="button">Hide Para</button>
+		
+	
+
+		<script>
+			$(document).ready(function(){
+				// $('p').click(function(){
+				// 	$(this).hide();
+				// });
+
+				$('#p1').click(function(){
+					$(this).hide();
+				});
+
+				$('.p2').click(function(){
+					$(this).hide();
+				});
+
+				$('button').click(function(){
+					$('#p3').hide();
+				});
+
+				// $('div').mouseleave(function(){
+				// 	alert('Hi i am OUT');
+				// });
+				// $('div').mouseenter(function(){
+				// 	alert('Hi i am in');
+				// })
+
+				$('div').on({
+					mouseenter:function(){
+						$(this).css('background-color', 'blue');
+					},
+					mouseleave:function(){
+						$(this).css('background-color', 'yellow');
+					},
+					click:function(){
+						$(this).css('background-color', 'green');
+					},
+				})
+
+
+			});
+
+		</script>
+	</body>
+</html>

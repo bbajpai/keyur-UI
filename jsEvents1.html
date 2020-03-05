@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			JS
+		</title>
+		<style type="text/css">
+			#box2{
+				width:300px;
+				height: 300px;
+				background-color: green;
+				color:#ffffff;
+				font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="box2" onmouseover="mouseOnDiv(this)"  onmouseout="mouseOutOnDiv(this)">
+			Hiiii!!!!!.
+			<p>qwlikqwhqj</p>
+		</div>
+	
+
+		<script>
+
+			var box2 = document.getElementById('box2');
+			box2.style.backgroundColor = "#FFEB3B";
+			function mouseOnDiv(obj){
+				obj.innerHTML = "Hello i an in ";
+			}
+			
+
+			function mouseOutOnDiv(obj){
+				obj.innerHTML = "I am out of it";
+			}
+
+
+		</script>
+	</body>
+</html>

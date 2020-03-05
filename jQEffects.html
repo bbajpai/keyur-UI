@@ -1,0 +1,42 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			JS
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<img src="1.jpg" width=300 height="300"/>
+
+
+		<button type="button" id="btn1">Hide Image</button>
+		<button type="button" id="btn2">Show Image</button>
+
+		<button type="button" id="btn3">Show/Hide Image</button>
+		
+	
+
+		<script>
+			$(document).ready(function(){
+				// $('p').click(function(){
+				// 	$(this).hide();
+				// });
+
+				$('#btn1').click(function(){
+				 	$('img').hide();
+				 });
+
+				$('#btn2').click(function(){
+				 	$('img').show();
+				 });
+				$('#btn3').click(function(){
+				 	$('img').toggle();
+				 });
+
+
+			});
+
+		</script>
+	</body>
+</html>

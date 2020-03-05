@@ -1,0 +1,47 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			JS
+		</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<style type="text/css">
+			#imageId{
+				/*display: none;*/
+			}
+
+			.headingCSS{
+				color:red;
+				font-size:30px;
+			}
+
+		</style>
+	</head>
+	<body>
+		<h3 id="heading1">Slide Image</h3>
+		<img id="imageId" src="1.jpg" width=300 height="300"/>
+
+		
+	
+
+		<script>
+			$(document).ready(function(){
+				// $('p').click(function(){
+				// 	$(this).hide();
+				// });
+				$('#heading1').click(function(){
+				 	$('#imageId').slideToggle("slow");
+				 });
+
+				$('#heading1').click(function(){
+				 	$(this).toggleClass('headingCSS');
+				 });
+
+				
+
+			});
+
+		</script>
+	</body>
+</html>

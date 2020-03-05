@@ -1,0 +1,58 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>
+			JS
+		</title>
+	</head>
+	<body>
+
+		<input type="text" name="data1" id="first"  onchange="updateData()"/> 
+		&nbsp; &nbsp; &nbsp; &nbsp;
+		<input type="text" name="data2" id="second"/>
+		<h1 id="box1">
+			Result
+		</h1>
+		<div id="box2">
+			
+		</div>
+		
+		<button type="button" onclick="showData()" >Show Time</button>
+
+		<button type="button" onclick="add()" >Add</button>
+
+		<button type="button" onclick="getData()" >Get User Input</button>
+
+
+		<script>
+
+			
+
+
+
+			var result = document.getElementById('box2');
+
+			function showData(){
+				result.innerHTML = Date();
+			}
+
+			function add(){
+				var inputData1 = document.getElementById('first').value;
+					inputData1 = parseInt(inputData1);
+				var inputData2 = document.getElementById('second').value;
+					inputData2 = parseInt(inputData2);
+				var c = inputData1 + inputData2;
+				result.innerHTML = c;
+			}
+
+			function updateData(){
+				var inputData1 = document.getElementById('first');
+				inputData1.value = inputData1.value.toUpperCase();
+			}
+
+			
+
+
+		</script>
+	</body>
+</html>
